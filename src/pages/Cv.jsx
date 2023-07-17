@@ -17,8 +17,8 @@ const Cv = () => {
             <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px' }}>
               CURRÍCULUM VITAE
               <div style={{ textAlign: 'right', marginTop: '0px' }}>
-                <a
-                  href="https://drive.google.com/file/d/1fgQaAoI9MB-sdTiQl0oNtkNyLPEBBbfR/view?usp=drive_link"
+                <Link
+                  to="https://drive.google.com/file/d/1fgQaAoI9MB-sdTiQl0oNtkNyLPEBBbfR/view?usp=drive_link"
                   style={{
                     display: 'inline-block',
                     padding: '10px 10px',
@@ -30,7 +30,7 @@ const Cv = () => {
                   }}
                 >
                   Descargar C.V.
-                </a>
+                </Link>
               </div>
             </h2>
           </Col>
@@ -59,13 +59,13 @@ const Cv = () => {
               </p>
               <p className="text-center">
                 <strong>Teléfono:</strong>{' '}
-                <Link to="/cv/https://wa.me/5492634368835">
+                <Link to="https://wa.me/5492634368835">
                   <FaWhatsappSquare style={{ fontSize: '35px', color: 'black' }} />
                 </Link>
               </p>
               <p className="text-center">
                 <strong>Linkedln:</strong>{' '}
-                <Link to="/cv/https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/">
+                <Link to="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/">
                   <FaLinkedin style={{ fontSize: '35px', color: 'black' }} />
                 </Link>
               </p>
