@@ -4,7 +4,7 @@ import Footer from '../components/public/Footer';
 import Navbar from '../components/public/NavBar';
 import { Progress } from 'antd';
 import { Col, Row } from 'antd';
-import { Link } from 'react-router-dom';
+
 
 const Cv = () => {
   return (
@@ -17,8 +17,10 @@ const Cv = () => {
             <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px' }}>
               CURRÍCULUM VITAE
               <div style={{ textAlign: 'right', marginTop: '0px' }}>
-                <Link
-                  to="https://drive.google.com/file/d/1fgQaAoI9MB-sdTiQl0oNtkNyLPEBBbfR/view?usp=drive_link"
+                <a
+                  href="https://drive.google.com/file/d/1fgQaAoI9MB-sdTiQl0oNtkNyLPEBBbfR/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: 'inline-block',
                     padding: '10px 10px',
@@ -30,7 +32,7 @@ const Cv = () => {
                   }}
                 >
                   Descargar C.V.
-                </Link>
+                </a>
               </div>
             </h2>
           </Col>
@@ -59,15 +61,15 @@ const Cv = () => {
               </p>
               <p className="text-center">
                 <strong>Teléfono:</strong>{' '}
-                <Link to="https://wa.me/5492634368835">
+                <a href="https://wa.me/5492634368835" target="_blank" rel="noopener noreferrer">
                   <FaWhatsappSquare style={{ fontSize: '35px', color: 'black' }} />
-                </Link>
+                </a>
               </p>
               <p className="text-center">
                 <strong>Linkedln:</strong>{' '}
-                <Link to="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/">
+                <a href="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin style={{ fontSize: '35px', color: 'black' }} />
-                </Link>
+                </a>
               </p>
             </Col>
           </Row>
