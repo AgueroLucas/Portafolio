@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaWhatsappSquare, FaLinkedin } from 'react-icons/fa';
 import Footer from '../components/public/Footer';
 import Navbar from '../components/public/NavBar';
