@@ -4,7 +4,6 @@ import Footer from '../components/public/Footer';
 import Navbar from '../components/public/NavBar';
 import { Progress } from 'antd';
 import { Col, Row } from 'antd';
-import { Link } from 'react-router-dom';
 
 const Cv = () => {
   return (
@@ -59,15 +58,15 @@ const Cv = () => {
               </p>
               <p className="text-center">
                 <strong>Teléfono:</strong>{' '}
-                <Link to="/cv/whatsapp"> {/* Utiliza Link en lugar de <a> */}
+                <a href="https://wa.me/5492634368835">
                   <FaWhatsappSquare style={{ fontSize: '35px', color: 'black' }} />
-                </Link>
+                </a>
               </p>
               <p className="text-center">
                 <strong>Linkedln:</strong>{' '}
-                <Link to="/cv/linkedin"> {/* Utiliza Link en lugar de <a> */}
+                <a href="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/">
                   <FaLinkedin style={{ fontSize: '35px', color: 'black' }} />
-                </Link>
+                </a>
               </p>
             </Col>
           </Row>
