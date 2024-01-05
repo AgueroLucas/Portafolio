@@ -16,7 +16,6 @@ export default class Main extends Component {
                 className="bd-placeholder-img rounded-circle"
                 width="340"
                 height="340"
-                role="img"
                 aria-label="Placeholder: 140x140"
               />
               <h1 style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>Lucas Ezequiel Agüero</h1>
