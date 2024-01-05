@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Cards from './Cards';
 import ScrollToTop from 'react-scroll-to-top';
 
