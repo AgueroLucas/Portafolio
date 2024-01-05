@@ -19,7 +19,7 @@ const Cv = () => {
               CURRÍCULUM VITAE
               <div style={{ textAlign: 'right', marginTop: '0px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
                 <a
-                  href="https://drive.google.com/file/d/1fgQaAoI9MB-sdTiQl0oNtkNyLPEBBbfR/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1ofHlofA2vkeACIt5bZmZSXBbYIZdpjd9/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
