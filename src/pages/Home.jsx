@@ -6,7 +6,7 @@ import Navbar from '../components/public/NavBar';
 
 function Home() {
   return (
-    <div style={{ background: 'linear-gradient(#f6e282, #fefbef)' }}>
+    <div style={{ background: 'linear-gradient(#D8D6DB, #F9F8FC)' }}>
       <Navbar />
       <Main />
       <Footer />
