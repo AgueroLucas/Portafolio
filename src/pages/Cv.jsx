@@ -80,7 +80,7 @@ const Cv = () => {
           <Row>
             <Col span={16} offset={4}>
               <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                EDUCACIÓN/CERTIFICACIONES
+                CERTIFICACIONES
               </h2>
             </Col>
           </Row>
