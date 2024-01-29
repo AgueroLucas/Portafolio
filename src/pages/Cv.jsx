@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../components/public/Footer';
 import Navbar from '../components/public/NavBar';
 import './estilocv.css';
+
 import { FaLinkedin,  FaWhatsapp } from "react-icons/fa";
 
 function Cv() {
