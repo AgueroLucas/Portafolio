@@ -57,7 +57,7 @@ const Card = () => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="btn-group">
               <a href="https://proyectart.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <button type="button" className="btn btn-sm btn-outline-secondary" style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>Ir a sitio</button>
+                <button type="button" className="btn btn-sm btn-outline-secondary" style={{ fontFamily: 'Kanit', fontWeight: 'lighter'}}>Ir a sitio</button>
               </a>
             </div>
           </div>

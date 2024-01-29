@@ -1,172 +1,213 @@
 import React from 'react';
-import { FaWhatsappSquare, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 import Footer from '../components/public/Footer';
 import Navbar from '../components/public/NavBar';
-import { Progress } from 'antd';
-import { Col, Row } from 'antd';
-import ScrollToTop from 'react-scroll-to-top';
+import './../estilos/estilocv.css';
+import { FaLinkedin,  FaWhatsapp } from "react-icons/fa";
 
-const Cv = () => {
+function Cv() {
+  const mainStyle = {
+    backgroundColor: 'linear-gradient(#D8D6DB, #F9F8FC)',
+    fontFamily: 'Kanit, sans-serif',
+  };
+
+  
+
   return (
-    <div style={{ background: 'linear-gradient(#D8D6DB, #F9F8FC)' }}>
+    <div style={mainStyle}>
+      
       <Navbar />
-      <div className="container">
-        <ScrollToTop smooth color="#000" />
-        <Row>
-          <Col span={24}>
-            <p></p>
-            <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '28px', borderRadius: '20px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-              CURRÍCULUM VITAE
-              <div style={{ textAlign: 'right', marginTop: '0px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <a
-                  href="https://drive.google.com/file/d/1ofHlofA2vkeACIt5bZmZSXBbYIZdpjd9/view?usp=drive_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'inline-block',
-                    padding: '10px 10px',
-                    background: '#D8D6DB',
-                    color: 'black',
-                    fontSize: '18px',
-                    borderRadius: '5px',
+      <div className="row justify-content-center">
+      <div className="col-md-9 ">
+  <div className="row align-items-center">
+    <div className="col-lg-5">
+      <div className="resume-base p-4" style={{ backgroundColor: '#212529', border: '3px solid #212529', borderRadius: '10px', position: 'relative' }}>
+        <div className="profile">
+          <div className="jobster-user-info d-flex align-items-center">
+            <div className="profile-avatar">
+              <img className="img-fluid" src="https://i.pinimg.com/736x/ee/bd/e8/eebde89ad5776e383e0019356c2e1e02.jpg" alt="" />
+            </div>
+            <div className="profile-avatar-info mt-3 " style={{ marginLeft: '20px' }} >
+              <h5 className="text-white">Lucas Agüero</h5>
+              <div className="d-flex" style={{ gap: '6px' }}>
+                <a className="text-body-white" href="https://wa.me/5492634368835" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp style={{ fontSize: '3rem', color: '#25D366' }} />
+                </a>
+
+                <a className="text-body-white" href="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin style={{ fontSize: '3rem', color: '#7289DA' }} />
+                </a>
+              </div>
+              {/* Botón para descargar con enlace */}
+              <a href="URL_DEL_ARCHIVO" download target="_blank" rel="noopener noreferrer" className="text-dark btn btn-dark" style={{ position: 'absolute', top: '8%', right: '10px', transform: 'translateY(-50%)',backgroundColor: '#7C7C7C',fontWeight: 'bold' ,transition: 'background-color 0.3s ease', // Añadido para suavizar la transición
+  }}
+  // Pseudo-clases para el hover
+  onMouseEnter={(e) => e.target.style.backgroundColor = '#F9F8FC'}
+  onMouseLeave={(e) => e.target.style.backgroundColor = '#7C7C7C'}>Descargar</a>
+            
+                      
+  
+                    </div>
+                  </div>
+                  
+                </div>
+                <div className="about-candidate border-top">
+                  <div className="candidate-info">
+                    <h6 className="text-white">Email:</h6>
+                    <p className="text-white">lucasaguero1997@gmail.com</p>
+                  </div>
+                  <div className="candidate-info">
+                    <h6 className="text-white">Teléfono:</h6>
+                    <p className="text-white">+(54) 2634368835</p>
+                  </div>
+                  <div className="candidate-info">
+                    <h6 className="text-white">Domicilio:</h6>
+                    <p className="text-white">Mendoza, Ciudad</p>
+                  </div>
+                  <div className="candidate-info">
+                    <h6 className="text-white">Idioma:</h6>
+                    <p className="text-white">Español: Nativo</p>
+                  </div>
+                  <div className="candidate-info">
+                    <h6 className="text-white">Sobre mí:</h6>
+                    <p className="text-white"><ul>
+                      <li>En busca de oportunidades que me ayuden a crecer de forma profesional.</li>
+                      <li>Uso de buenas practicas al momento de programar.</li>
+                      <li>Desarrollador Trainee.</li>
+                      </ul></p>
+                  </div>
+                
+                </div>
+                <div className="mt-0" style={{ display: "flex" }}>
+  <div style={{ marginRight: "60px" ,marginTop: "-10px"}}>
+    <h5 className="text-white">Competencias:</h5>
+    <ul>
+      <li className="text-white">Buen trabajo en equipo</li>
+      <li className="text-white">Disciplinado</li>
+      <li className="text-white">Responsable</li>
+      <li className="text-white">Rápido aprendizaje</li>
+      <li className="text-white">Organizado</li>
+      <li className="text-white">Buena comunicación</li>
+    </ul>
+  </div>
+
+  <div style={{ marginTop: "-10px"}}>
+    <h5 className="text-white">Skills:</h5>
+    <ul>
+      <li className="text-white">React.js</li>
+      <li className="text-white">Javascript</li>
+      <li className="text-white">Wordpress</li>
+      <li className="text-white">Conocimientos Basicos de SCRUM</li>
+      <li className="text-white">Git / GitHub</li>
+      <li className="text-white">Angular</li>
+      
+    </ul>
+  </div>
+</div>
+              </div>
+            </div>
+            <div className="col-lg-7" style={{ padding: '20px'}}>
+              <div className="resume-experience p-4" style={{ border: '2px solid #34375a', borderRadius: '10px' }}>
+              <div className="timeline-box" >
+                  <h5 className="resume-experience-title" style={{ marginLeft: '18px' }}>Educación:</h5>
+                  <div className="jobster-candidate-timeline">
+                    <div className="jobster-timeline-item">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2010 - 2017</span>
+                          <h6 className="mb-2">Producción de Bienes y Servicios con Orientación en Industrias de Procesos</h6>
+                          <span>-Escuela Nº 4-016 "Ing. Antonio M. Arboit"</span>
+                        </div>
+                      </div>
+                    </div>
                     
-                  }}
-                >
-                <FaFileDownload style={{ marginRight: '5px' }} />
-                </a>
-              </div>
-            </h2>
-          </Col>
-        </Row>
-        <div className="container">
-          <Row>
-            <Col span={16} offset={4}>
-              <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                DATOS PERSONALES
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="text-center" span={16} offset={4}>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Nombre:</strong> Lucas Ezequiel Agüero
-              </p>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Fecha de Nacimiento:</strong> 15/01/1997
-              </p>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Nacionalidad:</strong> Argentina
-              </p>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Correo Electrónico:</strong> lucasaguero1997@gmail.com
-              </p>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Teléfono:</strong>{' '}
-                <a href="https://wa.me/5492634368835" target="_blank" rel="noopener noreferrer">
-                  <FaWhatsappSquare style={{ fontSize: '35px', color: 'black' }} />
-                </a>
-              </p>
-              <p className="text-center" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                <strong>Linkedln:</strong>{' '}
-                <a href="https://www.linkedin.com/in/lucas-ag%C3%BCero-16447724b/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin style={{ fontSize: '35px', color: 'black' }} />
-                </a>
-              </p>
-            </Col>
-          </Row>
-        </div>
+                  </div>
+                </div>
+                <div className="timeline-box mt-5">
+                  <h5 className="resume-experience-title" style={{ marginLeft: '18px' }}>Cursos:</h5>
+                  <div className="jobster-candidate-timeline">
 
-        <div className="container" style={{ fontSize: '18px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-          <Row>
-            <Col span={16} offset={4}>
-              <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                CERTIFICACIONES
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="text-center" span={12} offset={6}>
-              <h3 className="text-center" style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>EEG Cooperation (2022/2022)</h3>
-              <p className="text-center" style={{ fontSize: '16px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                Curso de Programación desde Cero de una duración de teóricas y prácticas.
-              </p>
-              <h3 className="text-center" style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>Coder House (2022/2022)</h3>
-              <p className="text-center" style={{ fontSize: '16px',fontFamily: 'Kanit', fontWeight: 'lighter' }} >
-                Curso de Desarrollo web de una duración de 38 horas a lo largo de 10 semanas, cumpliendo todos los
-                requisitos académicos exigidos.
-              </p>
-              <h3 className="text-center" style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>T.TEC San Juan – Cuyo (2022/2023)</h3>
-              <p className="text-center" style={{ fontSize: '16px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                Curso de Programador Full Stack - Python de una duración de 500 horas certificado por la Universidad
-                Nacional de San Juan (UNSJ), la Cámara de Empresas de Tecnologías y Comunicaciones de San Juan (CASETIC) y
-                el Ministerio de Trabajo, Empleo y Seguridad Social de la Nación.
-              </p>
-            </Col>
-          </Row>
-        </div>
+                  <div className="jobster-timeline-item mb-0">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2024 - Actualidad</span>
+                          <h6 className="mb-2">Fullstack - Javascript/Node.js</h6>
+                          <p className="mt-2">Cursando</p>
+                        </div>
+                      </div>
+                    </div>
 
-        <div className="container">
-          <Row>
-            <Col span={16} offset={4}>
-              <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px',fontFamily: 'Kanit', fontWeight: 'lighter'  }}>
-                IDIOMA
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={12} offset={6}>
-              <p className="text-center" style={{fontSize: '18px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>Español Latino</p>
-            </Col>
-          </Row>
-        </div>
-
-        <div className="container">
-          <Row>
-            <Col span={16} offset={4}>
-              <h2 className="p-3 mb-2 bg-dark text-white text-center" style={{ fontSize: '24px', borderRadius: '20px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                CONOCIMIENTOS
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col style={{marginBottom: '20px'}} span={12} offset={6}>
-              <div>
-                <p className="text-center" style={{fontSize: '16px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                  <strong>JAVASCRIPT</strong>
-                </p>
-                <Progress percent={90} strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
+                    <div className="jobster-timeline-item">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2022 - 2023</span>
+                          <h6 className="mb-2">T.TEC San Juan – Cuyo - Programador Full Stack</h6>
+                          <p className="mt-2">Curso de Programador Full Stack - Python de una duración de 500 horas certificado por la Universidad Nacional de San Juan (UNSJ).
+</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="jobster-timeline-item mb-0">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2022 - 2022</span>
+                          <h6 className="mb-2">Coder House- Desarrollador Web</h6>
+                          <p className="mt-2">Curso de Desarrollo web de una duración de 38 horas a lo largo de 10 semanas, cumpliendo todos los requisitos académicos exigidos</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="jobster-timeline-item mb-0">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2022 - 2022</span>
+                          <h6 className="mb-2">EEG Cooperation- Curso de Programación desde Cero</h6>
+                          <p className="mt-2">Curso de Programación desde Cero de una duración de 81hs teóricas y prácticas.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="timeline-box mt-4">
+                  <h5 className="resume-experience-title" style={{ marginLeft: '18px' }}>Experiencia Laboral:</h5>
+                  <div className="jobster-candidate-timeline">
+                    <div className="jobster-timeline-item">
+                      <div className="jobster-timeline-cricle">
+                        <i className="far fa-circle"></i>
+                      </div>
+                      <div className="jobster-timeline-info">
+                        <div className="dashboard-timeline-info">
+                          <span className="jobster-timeline-time">2023</span>
+                          <h6 className="mb-2">Durante 2 meses estuve en un proyecto freelance realizando el diseño y maquetado de una web para una constructora utilizando (React).</h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
-              <div>
-                <p className="text-center" style={{fontSize: '16px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                  <strong>ANGULAR</strong> (poca experiencia)
-                </p>
-                <Progress percent={50} strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
-              </div>
-              <div>
-                <p className="text-center" style={{fontSize: '16px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                  <strong>GIT</strong>
-                </p>
-                <Progress percent={90} strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
-              </div>
-              <div>
-                <p className="text-center" style={{fontSize: '16px', fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                  <strong>CONOCIMIENTOS BASICOS DE SCRUM</strong>
-                </p>
-                <Progress percent={70} strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
-              </div>
-              <div>
-                <p className="text-center" style={{fontSize: '16px',fontFamily: 'Kanit', fontWeight: 'lighter' }}>
-                  <strong>REACT</strong>
-                </p>
-                <Progress percent={90} strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }} />
-              </div>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
+
     </div>
   );
-};
+}
 
 export default Cv;

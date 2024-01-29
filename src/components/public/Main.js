@@ -17,6 +17,7 @@ export default class Main extends Component {
                 width="340"
                 height="340"
                 aria-label="Placeholder: 140x140"
+                style={{ border: '2px solid black' }}
               />
               <h1 style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>Lucas Ezequiel Agüero</h1>
               <p className="lead text-muted" style={{ fontFamily: 'Kanit', fontWeight: 'lighter' }}>
