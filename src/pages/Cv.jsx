@@ -71,9 +71,8 @@ function Cv() {
                   <div className="candidate-info">
                     <h6 className="text-white">Sobre mí:</h6>
                     <p className="text-white"><ul>
-                      <li>En busca de oportunidades que me ayuden a crecer de forma profesional.</li>
-                      <li>Uso de buenas practicas al momento de programar.</li>
-                      <li>Desarrollador Trainee.</li>
+                      <li>Mi enfoque autodidacta ha sido fundamental para mi crecimiento profesional, permitiéndome explorar nuevas tecnologías y metodologías por mi cuenta. Me impulso siempre a buscar soluciones creativas y eficientes en cada proyecto en el que trabajo.</li>
+                      
                       </ul></p>
                   </div>
                 
